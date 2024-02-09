@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'}
+    span.s1 {font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Valentine's Day&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.flex {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: -16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.text-4xl {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.button {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0.5rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 0.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.button-yes {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #34d399;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-right: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.button-yes:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #10b981;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.button-no {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #ef4444;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.button-no:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #dc2626;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div class="flex"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;img class="bear-image" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="Bear with roses"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1 class="text-4xl"&gt;Will you be my Valentine?&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="button button-yes" style="font-size: 16px;" onclick="showMessage()"&gt;Yes&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="button button-no" onclick="handleNoClick()"&gt;No&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let noCount = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function handleNoClick() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const phrases = [</p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">     </span></span>"No",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Are you sure?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Really sure?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Think again!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Last chance!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"But why?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"You will regret this!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"I’M GONNA COME FOR YOU!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Pook pook please?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"HOW COULD YOU DO THIS TO ME!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Have a heart!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"After all we’ve been through!",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Please please please?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"ETHAN GENE ROGERS?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"Is that your final answer?",</p>
+<p class="p3"><span class="Apple-converted-space">      </span>"I’ll give you a kiss ;("</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const noButton = document.querySelector('.button-no');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noButton.textContent = phrases[Math.min(noCount, phrases.length - 1)];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noCount++;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function showMessage() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const flexContainer = document.querySelector('.flex');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flexContainer.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Kissing bear"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="text-4xl font-bold my-4"&gt;Ok yay!!!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
